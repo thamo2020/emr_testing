@@ -1,0 +1,69 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    font-family: sans-serif;
+}
+#nav-bar /*A period ( . ) indicates a class, and a hash ( # ) indicates an ID*/
+{
+    position: sticky; /*It allows us to make elements stick when the scroll reaches a certain point.An element with position: sticky will behave like a relatively-positioned element until it reaches a specified point and then starts behaving like a statically-positioned element.*/
+    top: 0;
+    z-index: 10; /*An element with greater stack order is always in front of an element with a lower stack order.As example Because the image has a z-index of -1, it will be placed behind the heading*/
+}
+.navbar
+{
+    background-image: linear-gradient(to right, #0f0f0f, #098f88) ;
+    padding: 0 !important; /*when u are using important its gave high priority that any other changes cannot override this particular rule*/
+    height: 150px;
+}
+.navbar-brand img
+{
+    height: 125px;
+    width: 140px; 
+    /*padding-left: 5px;
+    /*padding-top: 40px;*/
+}
+.ab {
+
+    font-weight: 600PX;
+    color: #ffffff;
+    font-size: xx-large;
+    
+    
+    
+}
+.navbar-nav li
+{
+    padding: 0 10px;/*top and bottom padding -0,right and left padding 10px*/
+
+}
+.navbar-nav li a
+{
+    color: #ffffff !important;
+    font-weight: 600px;
+    float: right;/*property is used for positioning and formatting content e.g. let an image float left to the text in a container.*/
+    text-align: left;
+    font-size: x-large;
+}
+.fa-bars
+{
+color: #ffffff;
+font-size: 30px !important;
+} 
+.navbar-toggler
+{
+    outline: none !important;
+}
+.panel
+{
+    outline:auto;
+    width: 300px;
+    color: green;
+}
+.cards
+{
+    padding-left: 100px;
+}

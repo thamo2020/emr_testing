@@ -1,0 +1,139 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    font-family: sans-serif;
+}
+#nav-bar /*A period ( . ) indicates a class, and a hash ( # ) indicates an ID*/
+{
+    position: sticky; /*It allows us to make elements stick when the scroll reaches a certain point.An element with position: sticky will behave like a relatively-positioned element until it reaches a specified point and then starts behaving like a statically-positioned element.*/
+    top: 0;
+    z-index: 10; /*An element with greater stack order is always in front of an element with a lower stack order.As example Because the image has a z-index of -1, it will be placed behind the heading*/
+}
+.navbar
+{
+    background-image: linear-gradient(to right, #0f0f0f, #098f88) ;
+    padding: 0 !important; /*when u are using important its gave high priority that any other changes cannot override this particular rule*/
+    height: 150px;
+}
+.navbar-brand img
+{
+    height: 125px;
+    width: 140px; 
+    /*padding-left: 5px;
+    /*padding-top: 40px;*/
+}
+.ab {
+
+    font-weight: 600PX;
+    color: #ffffff;
+    font-size: xx-large;
+    
+    
+    
+}
+.navbar-nav li
+{
+    padding: 0 10px;/*top and bottom padding -0,right and left padding 10px*/
+
+}
+.navbar-nav li a
+{
+    color: #ffffff !important;
+    font-weight: 600px;
+    float: right;/*property is used for positioning and formatting content e.g. let an image float left to the text in a container.*/
+    text-align: left;
+    font-size: x-large;
+}
+.fa-bars
+{
+color: #ffffff;
+font-size: 30px !important;
+} 
+.navbar-toggler
+{
+    outline: none !important;
+}
+
+
+
+
+body {
+    background-color: #F57F17
+}
+
+.mt-100 {
+    margin-top: 100px
+}
+
+.modal {
+    background-image: linear-gradient(rgb(35, 79, 71) 0%, rgb(36, 121, 106) 100.2%)
+}
+
+.modal-title {
+    font-weight: 900
+}
+
+.modal-content {
+    border-radius: 13px
+}
+
+.modal-body {
+    color: #3b3b3b
+}
+
+.img-thumbnail {
+    border-radius: 33px;
+    width: 61px;
+    height: 61px
+}
+
+.fab:before {
+    position: relative;
+    top: 13px
+}
+
+.smd {
+    width: 200px;
+    font-size: small;
+    text-align: center
+}
+
+.modal-footer {
+    display: block
+}
+
+.ur {
+    border: none;
+    background-color: #e6e2e2;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px
+}
+
+.cpy {
+    border: none;
+    background-color: #e6e2e2;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+    cursor: pointer
+}
+
+button.focus,
+button:focus {
+    outline: 0;
+    box-shadow: none !important
+}
+
+.ur.focus,
+.ur:focus {
+    outline: 0;
+    box-shadow: none !important
+}
+
+.message {
+    font-size: 11px;
+    color: #ee5535
+}
