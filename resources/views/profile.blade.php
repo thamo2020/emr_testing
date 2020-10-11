@@ -10,8 +10,11 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script><!-- bootstrap third link in js/jquery-->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"><!--font-awesome 4 cdn-->
         <!-- Include Date Range Picker -->
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+        <!--script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/-->
+        <script src="js/jquery.js"></script>
+        <script src="js/jquery-ui.js"></script>
+        <link rel="stylesheet" href="css/jquery-ui.css">
 
     <title>Document</title>
 </head>
@@ -89,7 +92,7 @@ function readURL(input) {
 <!---------------------------------------informations section-form started----------------------------------------->
 <section id="info">
 
-<form>
+<form action="{{route('profile.submit')}}" method="POST">
   <div class="form-row">
     <div class="form-group col-md-6">
       <label for="fname">First Name</label>
@@ -116,11 +119,11 @@ function readURL(input) {
   <!-- Date input -->
         <label class="control-label" for="DOB">DOB</label>
         <input class="form-control" id="DOB" name="DOB" placeholder="MM/DD/YYY" type="text"/>
-    
+       
     </div>
     <div class="form-group col-md-6">
       <label for="Age">Age</label>
-      <input type="text" class="form-control" id="Age" placeholder="Age">
+      <input type="text" class="form-control" id="Age" readonly placeholder="Age">
     </div>
     </div>
   
@@ -177,9 +180,9 @@ function readURL(input) {
   </div>
 
   <div class="form-group">
-    <label for="alergies">Medications currently available</label>
+    <label for="medications">Medications currently available</label>
 
-    <textarea class="form-control" id="alergies" rows="5"></textarea>
+    <textarea class="form-control" id="medications" rows="5"></textarea>
 
     <div class="row ">
    <div class=" my-auto">
@@ -233,18 +236,25 @@ function readURL(input) {
 </body>
 </html>
 
-<script>
-    $(document).ready(function(){
-      var date_input=$('input[name="DOB"]'); //our date input has the name "date"
-      var container=$('.bootstrap-iso form').length>0 ? $('.bootstrap-iso form').parent() : "body";
-      var options={
-        format: 'mm/dd/yyyy',
-        container: container,
-        todayHighlight: true,
-        autoclose: true,
-      };
-      date_input.datepicker(options);
-    })
+
+<script type="text/javascript">
+$(document).ready(function ()
+  {
+    var Age="";
+    $('#DOB').datepicker(
+      {
+        onSelect: function (value,ui)
+        {
+          var today = new Date();
+          Age=today.getFullYear() - ui.selectedYear;
+          $('#Age').val(Age);
+        },
+        changeMonth: true,
+        changeYear: true
+      }
+    )
+  }
+  
+  )
+
 </script>
-
-
