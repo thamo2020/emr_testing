@@ -26,8 +26,10 @@ Route::get('/home', function () {
     return view('home');
 });
 Route::get('/profile','profileController@index');
-
+Route::post('/profile','profileController@store');
 Route::post('/profile','profileController@profileSubmit')->name('profile.submit');
+
+
 
 Route::get('/update', function () {
     return view('update');

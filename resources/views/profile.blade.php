@@ -54,7 +54,7 @@
 </section>
 <!---------------------------------nav bar end-------------------------------------------->
 <!---------------------------------profile pic upload------------------------------------->
-
+<form action="profile" method="post" enctype="multipart/form-data">
 <div class="container">
     <div class="picture-container">
         <div class="picture">
@@ -65,6 +65,7 @@
 
     </div>
 </div>
+</form>
 
 <script>
 
@@ -92,7 +93,7 @@ function readURL(input) {
 <!---------------------------------------informations section-form started----------------------------------------->
 <section id="info">
 
-<form action="{{route('profile.submit')}}" method="POST">
+<form action="{{route('profile.submit')}}" method="POST" >
   <div class="form-row">
     <div class="form-group col-md-6">
       <label for="fname">First Name</label>
@@ -116,7 +117,9 @@ function readURL(input) {
   </div>
   <div class="form-row">
   <div class="form-group col-md-6">
-  <!-- Date input -->
+
+  <!-------------------------------- Date input --------------------------------------------------------->
+
         <label class="control-label" for="DOB">DOB</label>
         <input class="form-control" id="DOB" name="DOB" placeholder="MM/DD/YYY" type="text"/>
        
@@ -186,7 +189,7 @@ function readURL(input) {
 
     <div class="row ">
    <div class=" my-auto">
-     <div class="card card-block w-25">OR</div>
+     <div class="card card-block w-25"></div>
    </div>
 </div>
     <div class="container">
@@ -194,16 +197,17 @@ function readURL(input) {
         <div class="picture1">
             <img src="https://lh3.googleusercontent.com/LfmMVU71g-HKXTCP_QWlDOemmWg4Dn1rJjxeEsZKMNaQprgunDTtEuzmcwUBgupKQVTuP0vczT9bH32ywaF7h68mF-osUSBAeM6MxyhvJhG6HKZMTYjgEv3WkWCfLB7czfODidNQPdja99HMb4qhCY1uFS8X0OQOVGeuhdHy8ln7eyr-6MnkCcy64wl6S_S6ep9j7aJIIopZ9wxk7Iqm-gFjmBtg6KJVkBD0IA6BnS-XlIVpbqL5LYi62elCrbDgiaD6Oe8uluucbYeL1i9kgr4c1b_NBSNe6zFwj7vrju4Zdbax-GPHmiuirf2h86eKdRl7A5h8PXGrCDNIYMID-J7_KuHKqaM-I7W5yI00QDpG9x5q5xOQMgCy1bbu3St1paqt9KHrvNS_SCx-QJgBTOIWW6T0DHVlvV_9YF5UZpN7aV5a79xvN1Gdrc7spvSs82v6gta8AJHCgzNSWQw5QUR8EN_-cTPF6S-vifLa2KtRdRAV7q-CQvhMrbBCaEYY73bQcPZFd9XE7HIbHXwXYA=s200-no" class="picture-src" id="wizardPicturePreview" title="">
             <input type="file" id="wizard-picture" class="">
+            @csrf
         </div>
-         <h6 class="">Upload Prescriptions</h6>
+         <h6 class="">Upload</h6>
 
     </div>
 </div>
-
+<!---------------------------------------profile picture preview------------------------------------------------------->
 <script>
 
 $(document).ready(function(){
-// Prepare the preview for profile picture
+//Prepare the preview for profile picture
     $("#wizard-picture").change(function(){
         readURL(this);
     });
@@ -235,6 +239,8 @@ function readURL(input) {
 
 </body>
 </html>
+
+<!----------------------------------------------auto calculate birthday------------------------------------------------------>
 
 
 <script type="text/javascript">

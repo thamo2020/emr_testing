@@ -34,6 +34,11 @@ class profileController extends Controller
         $input = $request->all();
         
     }
+    public function store(Request $request)
+
+    {
+        echo "hello world";
+    }
 
 
 
