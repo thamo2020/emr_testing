@@ -19,22 +19,20 @@
     <section id="background"> 
         <div class="heading"><h1>Sign Up</h1></div>
         <div class="container-fluid bg" >
+<!--
+          @if($message = Session::get('Success'))
+            <div class="alert alert-success alert-block">
+              <strong>{{$message}}</strong>
+            </div>
+            <br>
+            @endif
+-->
             <div class="row">
               
                 <div class="col-md">
                   <!--form strated-->
                   <form action="{{route('signup.submit')}}" method="POST">
                   @csrf
-                 
-                    <div class="form-group" >
-                     
-
-                        
-                      
-
-                      <label for="name">Name </label>
-                      <input type="text" class="form-control" name="name" id="name" placeholder="Name ">
-                    </div>
                     
                     <div class="form-group">
                       <label for="email">E-mail</label>
@@ -45,10 +43,7 @@
                       <label for="password">Password</label>
                       <input type="Password" class="form-control" name="password" id="password" placeholder="Password">
                     </div>
-                    <div class="form-group">
-                      <label for="passwordcongif">Retype Password</label>
-                      <input type="Password" class="form-control" name="passwordcongif" id="passwordcongif" placeholder="Retype your Password">
-                    </div>
+                   
                   
                    <div class="checkbox">
                       <label>
