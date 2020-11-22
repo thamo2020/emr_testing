@@ -19,8 +19,7 @@ Route::get('/', function () {
 Route::get('/user','UserController@index' 
 
 );
-Route::get('/login','LoginController@index');
-Route::post('/login','LoginController@loginSubmit')->name('login.submit');
+
 
 Route::get('/home', function () {
     return view('home');
@@ -52,3 +51,20 @@ Route::post('/dsignup','doctorController@signupSubmit')->name('signup.submit');
 Route::get('/psignup','patientController@show');
 Route::post('/psignup','patientController@signupSubmit')->name('signup.submit');
 
+
+
+
+Route::get('/p-login', function () {
+    return view('p-login');
+});
+Route::get('/p-register', function () {
+    return view('p-register');
+});
+
+Route::get('/p-forget', function () {
+    return view('p-forget');
+});
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
