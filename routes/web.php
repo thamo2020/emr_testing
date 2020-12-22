@@ -73,23 +73,23 @@ Route::prefix('admin')->group (function(){
 
     //dashboard route
 
-    Route::get('/admin', 'App\Http\Controllers\AdminController@index')->name('admin.dashboard');
+    Route::get('/admin', 'Controllers\AdminController@index')->name('admin.dashboard');
 
     //login route
 
-    Route::get('/login', 'App\Http\Controllers\Auth\AdminLoginController@showLoginForm')->name('admin.login');
+    Route::get('/login', 'Auth\AdminLoginController@showLoginForm')->name('admin.login');
 
-    Route::post('/login', 'App\Http\Controllers\Auth\AdminLoginController@login')->name('admin.login.submit');
+    Route::post('/login', 'Auth\AdminLoginController@login')->name('admin.login.submit');
 
     //logout route
 
-    Route::post('/logout', 'App\Http\Controllers\Auth\AdminLoginController@logout')->name('admin.logout.submit');
+    Route::post('/logout', 'Auth\AdminLoginController@logout')->name('admin.logout.submit');
 
     //register route
 
-    Route::get('/register', 'App\Http\Controllers\Auth\AdminRegisterController@showRegisterForm')->name('admin.register');
+    Route::get('/register', 'Auth\AdminRegisterController@showRegisterForm')->name('admin.register');
 
-    Route::post('/register', 'App\Http\Controllers\Auth\AdminRegisterController@register')->name('admin.register.submit');
+    Route::post('/register', 'Auth\AdminRegisterController@register')->name('admin.register.submit');
 
 
 });
@@ -99,23 +99,23 @@ Route::prefix('doctor')->group (function(){
     
      //dashboard route
 
-     Route::get('/doctor', 'App\Http\Controllers\doctorController@index')->name('doctor.dashboard');
+     Route::get('/doctor', 'doctorController@index')->name('doctor.dashboard');
 
     //login route
 
-    Route::get('/login', 'App\Http\Controllers\Auth\DoctorLoginController@showLoginForm')->name('doctor.login');
+    Route::get('/login', 'Auth\DoctorLoginController@showLoginForm')->name('doctor.login');
 
-    Route::post('/login', 'App\Http\Controllers\Auth\DoctorLoginController@login')->name('doctor.login.submit');
+    Route::post('/login', 'Auth\DoctorLoginController@login')->name('doctor.login.submit');
 
     //logout route
 
-    Route::post('/logout', 'App\Http\Controllers\Auth\DoctorLoginController@logout')->name('doctor.logout.submit');
+    Route::post('/logout', 'Auth\DoctorLoginController@logout')->name('doctor.logout.submit');
 
     //register route
 
-    Route::get('/register', 'App\Http\Controllers\Auth\DoctorRegisterController@showRegisterForm')->name('doctor.register');
+    Route::get('/register', 'Auth\DoctorRegisterController@showRegisterForm')->name('doctor.register');
 
-    Route::post('/register', 'App\Http\Controllers\Auth\DoctorRegisterController@register')->name('doctor.register.submit');
+    Route::post('/register', 'Auth\DoctorRegisterController@register')->name('doctor.register.submit');
 
 
 });
