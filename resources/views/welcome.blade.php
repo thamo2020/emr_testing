@@ -62,6 +62,8 @@
             <li style="--i:4;"><a href="#">Contact Us</a></li>
     
         </div>
+
+        
     
         </section>
     
@@ -75,6 +77,55 @@
             }
     
         </script>
+
+        <h2 class="subhead">How it works</h2>
+
+        <section class="infor">
+
+           
+
+        <div class="container">
+        <div class="hexagen">
+            <div class="shape">
+                <img src="share (1).png">
+                <div class="content">
+                    <div>
+                        <h2>ahlfjirg</h2>
+                        <p>jkepiquegpsdddddddd ler lkjdfuief jgfiyqet ljhfoqey gfo87et sjkbjab jfoe7tr qjoq7eroebr liufyo87r kusf87qter r </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hexagen">
+            <div class="shape">
+                <img src="share (1).png">
+                <div class="content">
+                    <div>
+                        <h2>ahlfjirg</h2>
+                        <p>jkepiquegpsdddddddd ler lkjdfuief jgfiyqet ljhfoqey gfo87et sjkbjab jfoe7tr qjoq7eroebr liufyo87r kusf87qter r </p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="hexagen">
+            <div class="shape">
+                <img src="share (1).png">
+                <div class="content">
+                    <div>
+                        <h2>ahlfjirg</h2>
+                        <p>jkepiquegpsdddddddd ler lkjdfuief jgfiyqet ljhfoqey gfo87et sjkbjab jfoe7tr qjoq7eroebr liufyo87r kusf87qter r </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+ 
+
+        </section>
 
         
     </body>
