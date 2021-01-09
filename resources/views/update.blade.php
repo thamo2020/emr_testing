@@ -45,7 +45,7 @@
 </nav>
 
 </section>
-<!---------------------------------nav bar end-------------------------------------------->
+---------------------------------nav bar end-------------------------------------------->
 
 <!-----------------------------------info------------------------------------------------->
 <div class="name">
@@ -172,6 +172,7 @@ function readURL(input) {
     <textarea class="form-control" id="specialnotes" rows="5"></textarea>
   </div>
 
+  <a href="#" class="btn btn-primary">done</a>
   </form>
   </section>
 </body>

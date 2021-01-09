@@ -87,10 +87,10 @@
         <div class="container">
         <div class="hexagen">
             <div class="shape">
-                <img src="share (1).png">
-                <div class="content">
+            <img src="images/colorlib-registration-form-26.jpg">
+                <div class="content1">
                     <div>
-                        <h2>ahlfjirg</h2>
+                        <h2>Create an Account</h2>
                         <p>jkepiquegpsdddddddd ler lkjdfuief jgfiyqet ljhfoqey gfo87et sjkbjab jfoe7tr qjoq7eroebr liufyo87r kusf87qter r </p>
                     </div>
                 </div>
@@ -99,12 +99,12 @@
 
         <div class="hexagen">
             <div class="shape">
-                <img src="share (1).png">
-                <div class="content">
+                <img src="images/colorlib-registration-form-26.jpg">
+                <div class="content1">
                     <div>
-                        <h2>ahlfjirg</h2>
+                        <h2>Upload medical records</h2>
                         <p>jkepiquegpsdddddddd ler lkjdfuief jgfiyqet ljhfoqey gfo87et sjkbjab jfoe7tr qjoq7eroebr liufyo87r kusf87qter r </p>
-                    </div>
+                        </div>
                 </div>
                 
             </div>
@@ -112,10 +112,10 @@
         
         <div class="hexagen">
             <div class="shape">
-                <img src="share (1).png">
-                <div class="content">
+            <img src="images/colorlib-registration-form-26.jpg">
+                <div class="content1">
                     <div>
-                        <h2>ahlfjirg</h2>
+                        <h2>view medical records</h2>
                         <p>jkepiquegpsdddddddd ler lkjdfuief jgfiyqet ljhfoqey gfo87et sjkbjab jfoe7tr qjoq7eroebr liufyo87r kusf87qter r </p>
                     </div>
                 </div>
@@ -127,6 +127,39 @@
 
         </section>
 
-        
+        <h2 class="subhead">About Us</h2>      
+<section class="about-us">
+
+            <div class="s-container">
+                <img src="images/download-icons8 (1).png" alt="astywtywet" >
+            </div>
+
+            <div class="s-container">
+                <p>ajhlue jfege furgjw jwyiwr mir fjshflue lqjkehrliue qlfliuef ekjfliuegf ljfhliue ljfhlefh jfheuebe flehfebfb <br>rglhrlrr
+            dqkh;qklwet'lqkejtfqklwenfdnmnglkhrg'qlwkeng'qklg'hg'ihg'khg'khg</p>
+                </div>
+</section> 
+
+
+
+<section class="contact-us">
+<h2 class="subhead">Contact Us</h2> 
+    <div class="m-container">
+        <div class="input1">
+            we are ajhdf;is_readable
+            contact us onlfe
+        </div>
+
+        <div class="input1">
+            we are ajhdf;is_readable
+            contact us onlfe
+        </div>
+
+        <div class="input1">
+            we are ajhdf;is_readable
+            contact us onlfe
+        </div>
+    </div>
+</section>
     </body>
 </html>
